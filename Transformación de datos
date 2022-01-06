@@ -1,0 +1,17 @@
+Seleccionar columnas
+df[['nombre_columna_1','nombre_columna_2']]
+
+filas
+df[[indi_inicial:ind_final]]
+
+reomver duplicados
+df = df.drop_duplicates('column_name')
+
+eliminar nan:
+df.column_name.dopna(inplace = True)
+
+eliminar columna
+df.drop('column_name', axis = 1, inplace = true)
+
+filtrar df
+df_filt = df[df['column_name']>valor]
