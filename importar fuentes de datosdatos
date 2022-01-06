@@ -1,0 +1,16 @@
+CSV
+df = pd.read_vsc(r'file.csv',encoding = 'ISO-8859-1', delimiter = ',')
+
+import pandas as pd
+df = pd.read_csv(r'C:\Users\Trabajo\Desktop\CursoDASH-PLOLTY\Datasets\2.3\Info_pais.csv',encoding = 'ISO-8859-1',delimiter=';')
+print(df.head())
+
+EXCEL
+df = pd.read_excel(r'file_xslx',sheet_name='nombre hoja')
+
+SQL
+pip install pymysql
+from sqlalchemy import create_engine
+import pymysql
+db_conexion = creat_engine('mysql+pymysql://user:pass@ipserver/nombreBD')
+df = pd.read_sql('SELECT * FROM nn', con=db_conexion)
