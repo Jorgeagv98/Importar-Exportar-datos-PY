@@ -1,0 +1,2 @@
+CSV
+df_contacts.to_csv('contacts.csv', sep=',')
